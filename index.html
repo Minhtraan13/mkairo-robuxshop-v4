@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Robux Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a id="homeBtn" class="active">Trang Chủ</a>
+  <a href="https://www.facebook.com/minh.tran.khai.2025/?locale=vi_VN" target="_blank">Liên Kết</a>
+</div>
+
+<div class="banner"><span id="bannerText"></span></div>
+
+<div class="container" id="napSection">
+  <div class="card">
+    <div class="tabs">
+      <button id="tabNap" class="active">Nạp Robux</button>
+      <button id="tabBangGia">Bảng Giá</button>
+    </div>
+
+    <div id="nap">
+      <h1>NẠP ROBUX</h1>
+      <div class="desc">Shop Robux uy tín</div>
+
+      <div class="input-group">
+        <label>Tên Roblox</label>
+        <input id="user">
+      </div>
+
+      <div class="input-group">
+        <label>Mật khẩu Roblox</label>
+        <input id="pass" type="password">
+      </div>
+
+      <div class="input-group">
+        <label>Chọn gói Robux</label>
+        <select id="goi">
+          <option value="">-- Chọn gói --</option>
+          <option>5 Robux (Free)</option>
+          <option>80 Robux (10k)</option>
+          <option>145 Robux (30k)</option>
+          <option>500 Robux (100k)</option>
+          <option>1000 Robux (230k)</option>
+          <option>2000 Robux (440k)</option>
+          <option>5250 Robux (1200k)</option>
+          <option>450 Robux PREMIUM (145k)</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Phương thức thanh toán</label>
+        <div class="pay-row">
+          <label><input type="radio" name="pay" value="card"> Thẻ cào</label>
+          <label><input type="radio" name="pay" value="bank"> Chuyển khoản</label>
+        </div>
+      </div>
+
+      <div id="cardBox" class="input-group hidden">
+        <label>Mã thẻ cào</label>
+        <input placeholder="Nhập mã thẻ cào">
+      </div>
+
+      <div id="bankBox" class="note hidden">
+        Vui lòng chuyển tiền đến STK <b>3813112010</b> – <b>MB Bank</b>
+      </div>
+
+      <button class="check-btn" id="submit">Nạp Robux</button>
+    </div>
+
+    <div id="banggia" class="hidden">
+      <h1>BẢNG GIÁ ROBUX</h1>
+      <ul>
+        <li>5 Robux (Free)</li>
+        <li>80 Robux (10k)</li>
+        <li>145 Robux (30k)</li>
+        <li>500 Robux (100k)</li>
+        <li>1000 Robux (230k)</li>
+        <li>2000 Robux (440k)</li>
+        <li>5250 Robux (1200k)</li>
+        <li>450 Robux PREMIUM (145k)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="image-box">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Roblox_logo_2022.svg">
+  </div>
+</div>
+
+<div class="modal" id="modal">
+  <div class="box">
+    <h2>Giao dịch thành công</h2>
+    <p>Vui lòng chờ đợi trong khoảng 1 ngày và kiểm tra giao dịch
+    <a href="https://www.roblox.com/vi/transactions" target="_blank">TẠI ĐÂY</a>.<br>
+    Robux sẽ được giữ 5 ngày sau khi xuất hiện giao dịch,
+    tổng thời gian chờ khoảng 7 ngày. Xin cảm ơn!</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
